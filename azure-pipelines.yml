@@ -28,11 +28,5 @@ steps:
     workingDir: 'ClientApp'
     customCommand: 'run build'
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    workingDir: 'ClientApp'
-    customCommand: 'ng lint'
-
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
