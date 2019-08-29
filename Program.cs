@@ -21,4 +21,6 @@ namespace CtComponentTemplate
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
+
+    test
 }
